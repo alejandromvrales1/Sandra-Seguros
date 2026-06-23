@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="wrap">
+    <a href="{{ '/' | relative_url }}" class="brand">
+      <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="{{ site.business.name }}">
+      <span class="brand-text">{{ site.business.name }}<small>{{ site.business.tagline }}</small></span>
+    </a>
+    <nav class="main-nav">
+      <a href="{{ '/' | relative_url }}">Inicio</a>
+      <a href="{{ '/seguros/' | relative_url }}">Seguros</a>
+      <a href="{{ '/sobre-mi/' | relative_url }}">Sobre mí</a>
+      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      <a href="{{ '/contacto/' | relative_url }}">Contacto</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="https://wa.me/{{ site.business.whatsapp }}" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+  </div>
+</header>

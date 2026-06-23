@@ -1,0 +1,22 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "InsuranceAgency",
+  "name": "{{ site.business.name }}",
+  "description": "{{ site.description }}",
+  "url": "{{ site.url }}{{ site.baseurl }}",
+  "telephone": "{{ site.business.phone }}",
+  "email": "{{ site.business.email }}",
+  "areaServed": {
+    "@type": "State",
+    "name": "{{ site.business.region }}"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "{{ site.business.region }}",
+    "addressCountry": "{{ site.business.country }}"
+  },
+  "priceRange": "Cotización sin costo",
+  "sameAs": []
+}
+</script>

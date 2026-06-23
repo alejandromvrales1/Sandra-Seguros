@@ -1,0 +1,54 @@
+title: "Sandra Pereda | Agente de Seguros en Jalisco"
+description: "Sandra Pereda, agente de seguros independiente en Jalisco. Asesoría en seguros de auto, gastos médicos, vida y ahorro con GNP, Chubb, Quálitas, Mapfre, MetLife, Seguros Monterrey y Ana Seguros."
+url: "https://www.tudominio.com" # ⚠️ CAMBIA esto por tu dominio real antes de publicar
+baseurl: ""
+lang: es-MX
+locale: es_MX
+timezone: America/Mexico_City
+
+# Datos del negocio (se usan en todo el sitio y en el schema.org)
+business:
+  name: "Sandra Pereda"
+  tagline: "Agente de Seguros Independiente"
+  phone: "+52 33 2548 5580"
+  phone_display: "33 2548 5580"
+  whatsapp: "523325485580"
+  email: "spsandra.pereda@gmail.com"
+  region: "Jalisco"
+  country: "MX"
+  aseguradoras:
+    - "GNP"
+    - "Chubb"
+    - "Quálitas"
+    - "Seguros Monterrey"
+    - "MetLife"
+    - "Mapfre"
+    - "Ana Seguros"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules

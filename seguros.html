@@ -1,0 +1,52 @@
+---
+layout: default
+title: "Seguros de auto, vida, gastos médicos y ahorro en Jalisco"
+description: "Conoce las coberturas que ofrece Sandra Pereda, agente de seguros en Jalisco: autos, gastos médicos mayores, vida y ahorro/retiro."
+permalink: /seguros/
+---
+
+<div class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Coberturas</span>
+    <h1>El seguro correcto, no el primero que te ofrezcan</h1>
+  </div>
+</div>
+
+<div class="wrap" style="padding:56px 0;">
+  <div class="coverage-grid" style="margin-bottom:56px;">
+    <div class="coverage-card autos">
+      <span class="tag">Autos</span>
+      <h3>Seguro de auto</h3>
+      <p>Amplia, limitada o RC. Reviso deducibles, asistencia vial y cobertura de cristales antes de recomendarte una aseguradora.</p>
+    </div>
+    <div class="coverage-card salud">
+      <span class="tag">Gastos médicos</span>
+      <h3>Gastos médicos mayores</h3>
+      <p>Planes individuales o familiares, con o sin coaseguro, para hospitalización, cirugía y tratamientos de alto costo.</p>
+    </div>
+    <div class="coverage-card vida">
+      <span class="tag">Vida</span>
+      <h3>Seguro de vida</h3>
+      <p>Protección temporal o vitalicia, con opción de incluir invalidez o componente de ahorro/inversión.</p>
+    </div>
+    <div class="coverage-card ahorro">
+      <span class="tag">Ahorro</span>
+      <h3>Ahorro y retiro</h3>
+      <p>Planes a plazo fijo pensados para una meta: el retiro, los estudios de tus hijos o un patrimonio futuro.</p>
+    </div>
+  </div>
+
+  <div class="prose">
+    <h2>¿Cómo trabajo?</h2>
+    <p>Primero te escucho: qué te preocupa, qué presupuesto tienes y qué ya tienes cubierto (si algo). Después comparo entre las aseguradoras con las que trabajo —{{ site.business.aseguradoras | join: ", " }}— y te presento 2 o 3 opciones reales, explicadas en español sencillo.</p>
+    <p>No hay costo por la asesoría ni por la cotización. Tú decides si avanzas o no.</p>
+    <h2>Aseguradoras con las que trabajo</h2>
+    <ul>
+      {% for a in site.business.aseguradoras %}<li>{{ a }}</li>{% endfor %}
+    </ul>
+  </div>
+
+  <div style="margin-top:40px;">
+    <a class="btn btn-primary" href="https://wa.me/{{ site.business.whatsapp }}" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+  </div>
+</div>

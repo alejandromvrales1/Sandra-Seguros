@@ -1,0 +1,43 @@
+---
+layout: default
+title: "Contacto — Sandra Pereda, Agente de Seguros"
+description: "Contacta a Sandra Pereda para cotizar tu seguro de auto, vida, gastos médicos o ahorro en Jalisco."
+permalink: /contacto/
+---
+
+<div class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Contacto</span>
+    <h1>Cuéntame qué necesitas asegurar</h1>
+  </div>
+</div>
+
+<div class="wrap" style="padding:56px 0;">
+  <div class="contact-grid">
+    <div>
+      <div class="contact-card">
+        <span class="eyebrow">WhatsApp</span>
+        <a href="https://wa.me/{{ site.business.whatsapp }}" target="_blank" rel="noopener">{{ site.business.phone_display }}</a>
+      </div>
+      <div class="contact-card">
+        <span class="eyebrow">Teléfono</span>
+        <a href="tel:{{ site.business.phone | replace: ' ', '' }}">{{ site.business.phone_display }}</a>
+      </div>
+      <div class="contact-card">
+        <span class="eyebrow">Correo</span>
+        <a href="mailto:{{ site.business.email }}">{{ site.business.email }}</a>
+      </div>
+      <div class="contact-card">
+        <span class="eyebrow">Zona de atención</span>
+        <p>{{ site.business.region }}, México</p>
+      </div>
+    </div>
+    <div class="prose">
+      <p>La forma más rápida de cotizar es por WhatsApp: cuéntame qué quieres asegurar (auto, gastos médicos, vida o ahorro) y en qué ciudad de {{ site.business.region }} estás, y te respondo el mismo día con opciones reales.</p>
+      <p>Si prefieres, también puedes escribirme por correo y te contacto para agendar una llamada.</p>
+      <div style="margin-top:8px;">
+        <a class="btn btn-primary" href="https://wa.me/{{ site.business.whatsapp }}" target="_blank" rel="noopener">Escribir por WhatsApp ahora</a>
+      </div>
+    </div>
+  </div>
+</div>

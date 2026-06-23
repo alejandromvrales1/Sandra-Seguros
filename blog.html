@@ -1,0 +1,28 @@
+---
+layout: default
+title: "Blog de seguros — Sandra Pereda"
+description: "Artículos sobre seguros de auto, gastos médicos, vida y ahorro, explicados en español sencillo."
+permalink: /blog/
+---
+
+<div class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Blog</span>
+    <h1>Seguros explicados sin tecnicismos</h1>
+  </div>
+</div>
+
+<div class="wrap" style="padding:48px 0 80px;">
+  <div class="post-list">
+    {% for post in site.posts %}
+    <a class="post-row" href="{{ post.url | relative_url }}">
+      <div>
+        <span class="tag-pill tag-{{ post.category }}">{{ post.category }}</span>
+        <h3 style="margin-top:10px;">{{ post.title }}</h3>
+        <p style="color:var(--muted); font-size:14.5px; margin:0; max-width:60ch;">{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
+      </div>
+      <span class="date">{{ post.date | date: "%d %b %Y" }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</div>
